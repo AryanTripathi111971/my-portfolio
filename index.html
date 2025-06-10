@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Tripathi - Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Aryan Tripathi</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" onclick="showTab('home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" onclick="showTab('about')">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link" onclick="showTab('portfolio')">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" onclick="showTab('skills')">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" onclick="showTab('contact')">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="tab-content active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Aryan Tripathi</h1>
+                <h2>B.Tech CSE Student & Aspiring Developer</h2>
+                <p>Passionate about technology, programming, and creating innovative solutions. Currently pursuing Computer Science Engineering and exploring the world of software development.</p>
+                <div class="hero-buttons">
+                    <button class="btn primary" onclick="showTab('portfolio')">View My Work</button>
+                    <button class="btn secondary" onclick="showTab('contact')">Get In Touch</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="tab-content">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>B.Tech Computer Science Engineering - 2nd Year</h3>
+                    <p>I'm currently pursuing my Bachelor's degree in Computer Science Engineering. I have a strong passion for programming, problem-solving, and learning new technologies. My journey in computer science has been exciting, and I'm constantly working on improving my skills and building projects that showcase my abilities.</p>
+
+                    <h4>Education</h4>
+                    <ul>
+                        <li><strong>B.Tech CSE</strong> - Currently in 2nd Year</li>
+                        <li><strong>Current CGPA:</strong> 8.5/10</li>
+                        <li><strong>Relevant Coursework:</strong> Data Structures, Algorithms, OOP, Database Management</li>
+                    </ul>
+
+                    <h4>Interests</h4>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Mobile App Development</li>
+                        <li>Data Science & Machine Learning</li>
+                        <li>Competitive Programming</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5+</h3>
+                        <p>Programming Languages</p>
+                    </div>
+                    <div class="stat">
+                        <h3>2</h3>
+                        <p>Years of Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="tab-content">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Personal Website</h3>
+                        <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+                        <div class="portfolio-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Calculator App</h3>
+                        <p>A functional calculator application with basic arithmetic operations.</p>
+                        <div class="portfolio-tech">
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>To-Do List App</h3>
+                        <p>A task management application with add, edit, and delete functionality.</p>
+                        <div class="portfolio-tech">
+                            <span>React</span>
+                            <span>CSS</span>
+                            <span>LocalStorage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Tic Tac Toe Game</h3>
+                        <p>An interactive tic-tac-toe game with AI opponent and score tracking.</p>
+                        <div class="portfolio-tech">
+                            <span>Java</span>
+                            <span>Swing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Student Management System</h3>
+                        <p>A database-driven application for managing student records and information.</p>
+                        <div class="portfolio-tech">
+                            <span>Python</span>
+                            <span>SQLite</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Data Visualization Project</h3>
+                        <p>Interactive charts and graphs displaying various datasets and analytics.</p>
+                        <div class="portfolio-tech">
+                            <span>Python</span>
+                            <span>Matplotlib</span>
+                            <span>Pandas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="tab-content">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="tab-content">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology. Feel free to reach out!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>aryanpandit111971@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9336351142</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
